@@ -1,0 +1,6 @@
+pysocks
+httpx
+requests
+colorama
+speedtest-cli
+screen
