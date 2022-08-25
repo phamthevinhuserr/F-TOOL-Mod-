@@ -46,7 +46,22 @@ class Home:
 		http_proxies = [
 			"https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
 			"https://www.proxy-list.download/api/v1/get?type=http&anon=elite",
-			"https://www.proxy-list.download/api/v1/get?type=http&anon=anonymous"]
+			"https://www.proxy-list.download/api/v1/get?type=http&anon=anonymous"
+                        "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/HTTP.txt",
+                        "https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/http.txt",
+                        "https://raw.githubusercontent.com/HyperBeats/proxy-list/main/http.txt",
+                        "https://raw.githubusercontent.com/HyperBeats/proxy-list/main/https.txt",
+                        "https://raw.githubusercontent.com/mmpx12/proxy-list/master/http.txt",
+                        "https://api.proxyscrape.com/?request=displayproxies&proxytype=http",
+                        "https://api.openproxylist.xyz/http.txt",
+                        "http://alexa.lr2b.com/proxylist.txt",
+                        "https://multiproxy.org/txt_all/proxy.txt",
+                        "https://proxyspace.pro/http.txt",
+                        "https://proxy-spider.com/api/proxies.example.txt",
+                        "http://proxysearcher.sourceforge.net/Proxy%20List.php?type=http",
+                        "https://raw.githubusercontent.com/RX4096/proxy-list/main/online/all.txt",
+                        "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt",
+                        "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies_anonymous/http.txt"]
 		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
