@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "colorama": "^0.0.0",
+    "screeen": "^0.0.2",
+    "screen": "^0.2.10"
+  }
+}
